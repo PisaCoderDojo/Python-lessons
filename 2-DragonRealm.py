@@ -2,7 +2,10 @@ import random
 import time
 
 def intro():
-    print('intro')
+    print('Ti trovi in una terra piena di draghi. Di fronte a te,')
+    print('vedi due caverne. In una il drago è amichevole')
+    print('e ti darà i suoi tesori, nell\'altra il drago')
+    print('è avido e cattivo, e ti mangerà non appena ti vedrà.')
 
 def scegliNumeroCaverna():
     caverna=''
@@ -12,14 +15,20 @@ def scegliNumeroCaverna():
     return caverna
 
 def controllaCaverna(numCaverna):
-    print('intro')
-    #time.sleep(2)
+    print('Ti avvicini alla caverna...')
+    time.sleep(2)
+    print('E\' scura e spaventosa...')
+    time.sleep(2)
+    print('Un grande drago salta fuori di fronte a te! Apre le sue fauci e...')
+    time.sleep(2)
+
     rand = random.randrange(1,3)
-    
+
     if (str(rand) == numCaverna):
-        print('ti ha dato i tesori')
+        print('ti da il suo tesoro!')
     else:
-        print('ti ha mangiato vivo')
+        print('ti mangia in un sol boccone!')
+
 
 continua='yes'
 while continua=='yes' or continua=='y':
