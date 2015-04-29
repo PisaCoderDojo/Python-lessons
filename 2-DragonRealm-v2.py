@@ -15,19 +15,20 @@ def scegliNumeroCaverna():
     return caverna
 
 def controllaCaverna(numCaverna):
-    print('Ti avvicini alla caverna...')
+    print('\nTi avvicini alla caverna...', end='')
     time.sleep(2)
-    print('E\' scura e spaventosa...')
+    print('\rE\' scura e spaventosa...  ',end='')
     time.sleep(2)
-    print('Un grande drago salta fuori di fronte a te! Apre le sue fauci e...')
+    print('\rUn grande drago salta fuori di fronte a te! Apre le sue fauci e...',end='')
     time.sleep(2)
 
     rand = random.randrange(1,3)
 
     if (str(rand) == numCaverna):
-        print('ti da il suo tesoro!')
+        print('\rti da il suo tesoro!                                              ')
     else:
-        print('ti mangia in un sol boccone!')
+        print('\rti mangia in un sol boccone!                                      ')
+    print()
 
 
 continua='yes'
@@ -39,5 +40,5 @@ while continua=='yes' or continua=='y':
 
     controllaCaverna(numCaverna)
 
-    print('\nVuoi giocare ancora?')
+    print('Vuoi giocare ancora?')
     continua = input()
