@@ -8,7 +8,7 @@ risp = input()
 # 1 -> croce
 moneta = str(random.randint(0,1))
 
-if (risp = moneta):
+if (risp == moneta):
     print ('Hai vinto! è uscito ' + moneta)
-else
+else:
     print ('Hai perso! è uscito ' + moneta)

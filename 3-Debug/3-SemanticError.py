@@ -9,7 +9,7 @@ print('Quant\'è ' + str(number1) + ' + ' + str(number2) + '?')
 
 answer = input()
 
-if answer == number1 + number2:
+if int(answer) == number1 + number2:
     print('Corretto!')
 else:
     print('No! La risposta giusta è ' + str(number1 + number2))
