@@ -9,10 +9,15 @@ testa = 0
 while lancio < 1000:
     #testa -> 1
     #croce -> 0
+    lancio=lancio+1
+    if(lancio==500):
+        print('siamo arrivati a '+str(lancio)+' lanci e testa e usci')
+            
     if random.randint(0, 1) == 1:
         testa = testa + 1
+        
 
-    print('#commento: mi sa che c\'è un errore!!! (CTRL+c per chiudere)')
+    #print('#commento: mi sa che c\'è un errore!!! (CTRL+c per chiudere)')
 
 print()
 print('Ho lanciato 1000 monete, testa è uscita ' + str(testa) + ' volte!')

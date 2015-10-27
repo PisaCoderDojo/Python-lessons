@@ -8,3 +8,4 @@ def leggiNome():
     scriviNome()
 
 leggiNome()
+
