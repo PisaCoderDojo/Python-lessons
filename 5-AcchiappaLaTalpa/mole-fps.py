@@ -1,6 +1,7 @@
 import sys
 import pygame
 from random import randint
+from math import floor
 
 # Inizializzazione del motore grafico PyGame
 pygame.init()
@@ -13,6 +14,7 @@ screen = pygame.display.set_mode(dimScreen)
 
 # Definizione di alcuni colori
 BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 
@@ -65,6 +67,7 @@ while True:
     # aggiunta alla shermo. "True" per attivare anti-aliased del testo.
     colpiteTesto = font.render("Colpite:   " + str(colpite), True, BLACK)
     mancateTesto = font.render("Mancate: " + str(mancate), True, BLACK)
+    fpsText = font.render("fps: " + str(floor(clock.get_fps())), True, WHITE)
 
     # Sovrapponiamo tutti gli elementi grafici creati fino ad ora sullo schermo
     # per creare il fotogramma finale. Qui l'ordine è importante, gli oggetti
@@ -73,6 +76,7 @@ while True:
     screen.blit(talpaImg, talpa)
     screen.blit(colpiteTesto, COLPITE_POS)
     screen.blit(mancateTesto, MANCATE_POS)
+    screen.blit(fpsText, (LARGHEZZA - 70, ALTEZZA - 20))
 
     # Aggiungiamo allo schermo delle linee di 10px di altezza per rappresentare
     # le talpe colpite o mancate.
