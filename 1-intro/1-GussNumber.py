@@ -1,12 +1,15 @@
 import random
 
-randomNum = random.randrange(1,11)
+numero_random = random.randrange(1, 10)
 
-for i in range(0,6):
-    print('tentativo numero '+str(i))
-    inputNum = int(input())
-    if (randomNum==inputNum):
-        print('indovinato!')
+for tentativo in 1, 2, 3, 4, 5:
+    print ('tentativo numero ' + str(tentativo))
+
+    striga_inserita = input('inserisci il numero ')
+    numero_inserito = int(striga_inserita)
+
+    if numero_random == numero_inserito:
+        print ('indovinato!\n')
         break
     else:
-        print('sbagliato, riprova..')
+        print('sbagliato, riprova...\n')
