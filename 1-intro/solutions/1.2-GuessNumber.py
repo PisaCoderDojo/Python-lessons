@@ -6,13 +6,13 @@ import random
 min_input = input("Inserisci il  numero minimo ")
 max_input = input("Inserisci il  numero massimo ")
 
-numero_random = random.randrange(int(min_input), int(max_input))
+
 
 print("Ho scelto un numero a caso tra "+min_input+ " e "+ max_input)
 
-ripeti_gioco = True
-
-while(ripeti_gioco==True):
+ripeti_gioco = "y"
+while(ripeti_gioco=="y"):
+    numero_random = random.randrange(int(min_input), int(max_input))
     for tentativo in 1, 2, 3, 4, 5:
         print ('tentativo numero ' + str(tentativo))
 
@@ -25,8 +25,5 @@ while(ripeti_gioco==True):
         else:
             print('sbagliato, riprova...\n')
 
-    scelta = input("Vuoi fare un'altra partita ? (y,n) ")
-    if scelta == 'n':
-        ripeti_gioco = False
-    else:
-        ripeti_gioco = True
+    ripeti_gioco = input("Vuoi fare un'altra partita ? (y,n) ")
+    

@@ -1,13 +1,9 @@
 import random
 
-'''
-Chiedi all'utente se vuole ripetere la partita quando ha finito il numero di tentativi massimi.
-Richiede conoscenza del while()
-'''
+numero_random = random.randrange(1, 10)
 
-ripeti = "y"
-while(ripeti=="y""):
-    numero_random = random.randrange(1, 10)
+yes = "y"
+while(yes =="y"):
     for tentativo in 1, 2, 3, 4, 5:
         print ('tentativo numero ' + str(tentativo))
 
@@ -19,5 +15,4 @@ while(ripeti=="y""):
             break
         else:
             print('sbagliato, riprova...\n')
-
-    scelta = input("Vuoi fare un'altra partita ? (y,n) ")
+    yes = input("Vuoi fare un'altra partita ? (y,n)")
