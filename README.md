@@ -1,5 +1,5 @@
 # Lezioni di Python
-Raccolta di programmi in python presentati hai ragazzi di coderDojo Pisa
+Raccolta di programmi in python presentati ai ragazzi di coderDojo Pisa
 
 ## Prerequisiti
 Tutti i programmi richiedono [python3.2+](https://www.python.org/downloads/release/python-343/), alcuni richiedono anche la libreria [pyGame 1.9.1](http://www.pygame.org) per funzionare correttamente.
